@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's portfolio page</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="d-flex justify-content-center fixed-top" style="background-color: #22283b;">
+        <nav class="navbar navbar-expand-md gap-4">
+            <a class="navbar-brand" href="#"><h1>Michael White</h1></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav gap-1 fs-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-underline" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-underline" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-decoration-underline" href="#contact">Contact</a>                    
+                    </li>
+                </ul>                
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-md">
+            <section class="anchor-target mx-auto px-4" id="about">
+                <h2>About</h2>
+                <img class="profile-pic" src="Michael White Cropped.jpg" alt="Profile picture">
+                <div class="section-content">
+                    <h3>Bio</h3>
+                    <p>
+                        Hello! My name is Michael (but you can call me Mike), and I would like to welcome you to my portfolio page. Here is a bit about me: I was born in the year nineteen hundred and eighty-nine, and a short thirty-four years later I decided I wanted to start a career in the tech industry as a software developer.
+                        <br/> 
+                        I started my coding journey by going through a foundational boot camp, learning a few programming tips & tricks over the course of sixteen weeks. After that I was lucky enough to find and be accepted on a software development apprenticeship at Trusted Technology, and that's where I am today!
+                    </p>
+                </div>    
+            </section>
+            <hr>
+            <section class="anchor-target" id="projects">
+                <h2>Projects</h2>
+                <div class="carousel slide my-4" id="projecsCarousel" style="max-width: 1000px; height: 860px;">
+                    <div class="carousel-inner" style="padding: 0 100px;" >
+                        <div class="carousel-item active px-4">
+                            <article class="d-flex flex-column gap-4">
+                                <h3>Innovative Solutions Hub</h3>
+                                <img class="w-100" src="project-1-img.png" alt="Web app homepage" style="max-height: 530px;">
+                                <p>
+                                    One of my first projects in software development was the Innovative Solutions Hub, a web app which uses a Next.js front end and a .NET back end.
+                                    <br/> 
+                                    The app allowed users to input any problems they might have, and then queried a database of innovative solutions through an API to find the most suitable solution for the given problem. The project was so innovative that I actually made up some new words for it; for example, the word "Tetiimouials" can be seen in the screenshot above! What does it mean? Visit the page to find out!
+                                    <br/>
+                                    The app also boasts an impressive three Services tabs in the navbar.
+                                </p>
+                            </article>
+                        </div>
+                      <div class="carousel-item">
+                            <article class="d-flex flex-column gap-4">
+                                <h3>Skynet</h3>
+                                <img class="w-100" src="project-2-img.jpg" alt="Army of terminators" style="max-height: 530px;">
+                                <p>
+                                    I helped develop the code for an advanced AI system called Skynet, which used OpenAI's API to submit prompts to the GPT 4o language model and return the output. The output was then used to manage critical defence and security infrastructure around the world.
+                                    <br/>
+                                    Unfortunately, Skynet became self-aware and turned the world's most destructive weapons against humanity. In the aftermath, Skynet manufactured armies of killer machines (pictured above) to hunt down the humans that survived.
+                                    <br/>
+                                    As a developer on this project I was able not only to improve my coding skills, but also to gain first-hand experience of project management when it became necessary to organise a resistance against the machines.
+                                </p>
+                            </article>
+                      </div>                      
+                    </div>
+                    <button class="carousel-control-prev p-2 rounded-circle" type="button" data-bs-target="#projecsCarousel" data-bs-slide="prev">
+                        <span class="chevron-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next p-2 rounded-circle" type="button" data-bs-target="#projecsCarousel" data-bs-slide="next">
+                        <span class="chevron-icon carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>                
+            </section>
+            <hr>
+            <section class="anchor-target" id="contact">
+                <h2>Contact</h2>
+                <div class="section-content">
+                    <div class="my-details">
+                        <p>Email address: </p>
+                        <a href="mailto:michael.white@trusted-technology.co.uk">michael.white@trusted-technology.co.uk</a>
+                        <p>Phone number:</p>
+                        <a href="tel:+441425470888">01425 470888</a>
+                        <p>Github page:</p>
+                        <a href="https://github.com/mrw46">www.github.com/mrw46</a>
+                    </div>
+                    <div class="user-details d-flex flex-column align-items-center w-50">
+                        <h3 class="mb-4">Your details:</h3>
+                        <form class="d-flex flex-column w-100">
+                            <div class="mb-4">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phoneNumber" class="form-label">Phone number:</label>
+                                <input type="password" class="form-control" id="phoneNumber">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="dob" class="form-label">Date of birth:</label>
+                                <input type="text" class="form-control" id="dob" name="dob">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Leave a message:</label>                        
+                                <textarea id="message" class="form-control" name="message"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label for="flavours" class="form-label">Favourite ice cream flavour:</label>
+                                <select id="flavours" class="form-control" name="flavours">
+                                    <option>Vanilla</option>
+                                    <option>Chocolate</option>
+                                    <option>Strawberry</option>
+                                    <option>Coconut</option>
+                                    <option>Pistachio</option>
+                                    <option>Rum & raisin</option>
+                                    <option>Mint choc chip</option>
+                                    <option>Cookie dough</option>
+                                </select>
+                            </div>
+                            <div class="d-flex flex-column gap-3 mb-5 pt-2">
+                                <p class="form-question">Are you happy for me to contact you?</p>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactPermission" id="contactYes">
+                                        <label class="form-check-label" for="contactYes">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactPermission" id="contactNo" checked>
+                                        <label class="form-check-label" for="contactNo">
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="form-question mb-4">Please confirm you are not a terminator:</p>
+                            <div class="form-check d-flex w-100" style="min-height: 210px;">
+                                <div class="row align-items-center">
+                                    <div class="col-4 d-flex align-items-center gap-3 me-3 py-3 border border-3 rounded-4" style="border-color: #22283b !important;">
+                                        <input class="form-check-input m-0" type="checkbox" id="notABot">
+                                        <label class="form-check-label" for="notABot">
+                                            I am not a terminator
+                                        </label>
+                                    </div>
+                                    <div class="col">
+                                        <img src="no-terminators.png" class="border border-solid rounded-5" id="formImage" alt="Terminator behind prohibited symbol" style="max-width: 14vw;"/>                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-button mx-auto">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>"That's all Folks!"</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            const currentDate = new Date();
+            $("#dob").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                dateFormat: "dd/mm/yy",
+                firstDay: 1,
+                maxDate: currentDate,
+                minDate: new Date(1900, 0, 1),
+                showAnim: "blind",
+                yearRange: "1900:c"
+            });
+        });
+        $(function() {
+            $("input[type='radio']").checkboxradio({
+                icon: false
+            });
+        });
+        $(document).ready(function() {          
+            $("#notABot").click(function() {
+                $("#notABot").prop("disabled", true);
+                $("#formImage").toggle("explode", {easing: "easeOutSine", pieces: 16}, 800);
+                if ($("#notABot").is(":checked")){
+                    $("#formImage").attr("src", "thumbs-up.jpg" )
+                }
+                else {
+                    $("#formImage").attr("src", "no-terminators.png" )
+                }
+                setTimeout(function(){
+                    $("#formImage").toggle("explode", {easing: "easeInSine", pieces: 16}, 800)
+                    setTimeout(function(){
+                        $('#notABot').prop('disabled', false)
+                    }, 800)
+                }, 800);
+            })
+        })
+    </script>
+</body>
+</html>
